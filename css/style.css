@@ -1,0 +1,223 @@
+
+*{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+}
+ body {
+     font-family: 'Roboto', sans-serif;
+     background: #fafafa;
+}
+ p {
+     font-family: 'Roboto', sans-serif;
+     font-size: 1.1em;
+     font-weight: 300;
+     line-height: 1.7em;
+     color: #999;
+}
+ a, a:hover, a:focus {
+     color: inherit;
+     text-decoration: none;
+     transition: all 0.3s;
+}
+
+ i, span {
+     display: inline-block;
+}
+
+ .navbar {
+     padding: 7px 10px;
+     background: #fff;
+     border: none;
+     border-radius: 0;
+     margin-bottom: 0;
+     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.wrapper .navbar-btn {
+     box-shadow: none;
+     outline: none;
+     border: none;
+}
+.wrapper {
+     display: flex;
+     align-items: stretch;
+}
+ .sidenav {
+     min-width: 200px;
+     max-width: 200px;
+     background: #464646;
+     color: #fff;
+     transition: all 0.3s;
+}
+ .sidenav.active {
+     min-width: 80px;
+     max-width: 80px;
+     text-align: center;
+}
+ .sidenav.active .sidebar-header h3 {
+     display: none;
+}
+.sidebar-header h3{margin-top:10px;
+
+}
+
+ .sidenav.active .sidebar-header strong {
+     display: block;
+}
+ .sidenav ul li a {
+     text-align: left;
+}
+ .sidenav.active ul li a {
+     padding: 20px 10px;
+     text-align: center;
+     font-size: 0.85em;
+}
+ .sidenav.active ul li a i {
+     margin-right: 0;
+     display: block;
+     font-size: 1.8em;
+     margin-bottom: 5px;
+}
+
+
+ .sidenav .sidebar-header {
+     padding: 12px;
+     background: #3498db;
+}
+ .sidenav .sidebar-header strong {
+     display: none;
+     font-size: 1.8em;
+}
+
+ .sidenav ul li{
+    position:relative;
+}
+
+ 
+ .sidenav ul li a {
+     padding: 10px 10px 10px 40px;
+     font-size: 1.1em;
+     display: block;
+     position:relative;
+}
+ .sidenav ul li .active{
+     color:#3498db;
+     background: #fff;
+     border-right:5px solid #3498db;
+}
+
+ .login-user{
+    position:relative;
+    padding:10px;
+    float:right;
+}
+ .login-user:before{
+     content:"\e008";
+     position: absolute;
+     left:-18px;
+     font-family: 'Glyphicons Halflings';
+     font-size: 20px;
+     color:#CCC;
+}
+ .sidenav ul li a i {
+     margin-right: 10px;
+}
+ .sidenav ul li.active > a, a[aria-expanded="true"] {
+     color: #fff;
+     background: #6d7fcc;
+}
+
+ .img-responsive{
+     width:100%;
+}
+ .toggle .btn-info{
+     background:#3498db;
+}
+ .navbar-form{
+     border:none;
+}
+ .header-searchbox{
+     position:relative;
+}
+ .header-searchbox:after {
+     content: "\e003";
+     display: block;
+     position: absolute;
+     right: 11px;
+     top: 6px;
+     font-family: 'Glyphicons Halflings';
+     font-size: 15px;
+     color: #CCC;
+}
+ .header-searchbox input[type="search"]{
+     border-radius:20px;
+	 
+}
+ .header-searchbox:after{
+}
+ .col-sm-3 img:hover{
+     opacity:0.5;
+}
+
+ #content {
+    
+     min-height: 100vh;
+     transition: all 0.3s;
+}
+ .content-padding{
+     padding:20px;
+}
+.content-padding h3{
+	padding-left:20px;
+}
+ .content-padding .col-sm-3 .label{
+     margin:15px 0;
+     display:inline-block;
+}
+/* --------------------------------------------------- MEDIAQUERIES ----------------------------------------------------- */
+ @media (max-width: 768px) {
+    .wrapper .sidenav {
+         min-width: 80px;
+         max-width: 80px;
+         text-align: center;
+         margin-left: -80px;
+    }
+     #content{
+        padding:10px;
+    }
+    
+    .wrapper .sidenav.active {
+         margin-left: 0;
+    }
+    
+     .sidenav .sidebar-header strong {
+         display: block;
+    }
+     .sidenav ul li a {
+         padding: 20px 10px;
+    }
+     .sidenav ul li a span {
+         font-size: 0.85em;
+    }
+     .sidenav ul li a i {
+         margin-right: 0;
+         display: block;
+    }
+   
+     .sidenav ul li a i {
+         font-size: 1.3em;
+    }
+     .sidenav {
+         margin-left: 0;
+    }
+     #sidebarCollapse span {
+         display: none;
+    }
+     .sidenav ul li .active:after{
+        display:none;
+    }
+     .content-padding{
+        width:100%;
+    }
+}
+ 
